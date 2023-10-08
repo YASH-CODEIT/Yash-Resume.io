@@ -1,0 +1,156 @@
+.header {
+    overflow: hidden;
+    background-color: #343a40;
+    padding: 20px 10px;
+  }
+
+  .header a.logo {
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+  }
+
+  .header-right {
+    float: right;
+  }
+
+  .header-right a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+  }
+
+  .header-right a.active {
+    background-color: dodgerblue;
+  }
+
+  /* Styles for the education section */
+  .education,
+  .skills,.projects ,.greeting,.contact{
+    padding: 20px;
+    border: 1px solid #343a40;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-image: linear-gradient(90deg,#0C0C0C,#4834D4);
+    color: #ffffff;
+  }
+
+  .education h2,
+  .skills h2,.projects h2, .greeting h2 ,.contact h2, .greeting h2{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+ 
+  .education-item,
+  .skill-card, .project-card {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #545d68;
+  }
+
+  .education-item h4,
+  .skill-card h4 , .project-card h4{
+    margin-bottom: 2px;
+  }
+
+  .education-item p:last-child,
+  .skill-card p:last-child ,
+  .project-card p:last-child{
+    margin-bottom: 0;
+  }
+
+  .education-item p,
+  .skill-card p,
+  .project-card p, .greeting p {
+    margin-bottom: 5px;
+  }
+
+  .hobby-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .hobby-item {
+    text-align: center;
+    flex: 1;
+  }
+
+  .hobby-icon,
+  .skill-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    border: 2px solid rgb(77, 192, 227);
+    border-radius: 10px;
+    background-color: #1d0837;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .card-body {
+    text-align: center;
+    
+  }
+  .greeting{
+    text-align:center;
+  }
+  .education h2,
+  .skills h2,
+  .hobbies h2 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: dodgerblue;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover::before {
+    transform: translateX(-50%) scaleX(1);
+    background-color: dodgerblue;
+    width:100%;
+  }
+  .hobby-icon{
+    width: 48px; /* Adjust as needed */
+    height: 48px; /* Adjust as needed */
+    /* Add any other styles you want */
+  }
+  .skill-icon{
+    width: 48px; /* Adjust as needed */
+    height: 48px; /* Adjust as needed */
+    /* Add any other styles you want */
+  }
+.jumbotron{
+background-color: #111e2a;
+}
