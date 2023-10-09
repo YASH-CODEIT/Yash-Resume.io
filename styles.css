@@ -163,3 +163,12 @@ background-color: #111e2a;
 .hobby-item:hover {
   transform: scale(1.1);
 }
+.skill-icon {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  transition: transform 0.3s;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}
