@@ -154,3 +154,12 @@
 .jumbotron{
 background-color: #111e2a;
 }
+.hobby-item {
+  text-align: center;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.hobby-item:hover {
+  transform: scale(1.1);
+}
