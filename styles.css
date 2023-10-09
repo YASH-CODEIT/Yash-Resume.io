@@ -172,3 +172,8 @@ background-color: #111e2a;
 .skill-icon:hover {
   transform: scale(1.2);
 }
+.project-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
