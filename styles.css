@@ -173,7 +173,7 @@ background-color: #111e2a;
   transform: scale(1.2);
 }
 .project-card:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   transition: transform 0.5s ease-in-out;
 }
 
