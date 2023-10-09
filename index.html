@@ -35,11 +35,12 @@
       </ul>
     </div>
   </nav>
-<div class="jumbotron jumbotron-fluid text-center">
-        <div class="container">
-          <h1 class="display-4">Welcome to my Portfolio</h1>
-      </div>
-  </div>
+  <div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+      <h1 class="display-4" id="movingText"></h1>
+      <h4 id="additionalText" style="display:none;"></h4>
+    </div>
+    </div>
 
   <div class="container">
     <div class="container education" id="education">
@@ -387,7 +388,38 @@ aria-hidden="true">
         });
       });
     });
-    
+    document.addEventListener('DOMContentLoaded', () => {
+      const movingText = document.getElementById('movingText');
+      const additionalText = document.getElementById('additionalText');
+
+      const simulateType = (text, element, delay = 100) => {
+        let index = 0;
+        let finalText = '';
+        const typingInterval = setInterval(() => {
+          finalText += text[index];
+          element.textContent = finalText;
+          index++;
+          if (index === text.length) {
+            clearInterval(typingInterval);
+            additionalText.style.display = 'block';
+            displayAdditionalText();
+          }
+        }, delay);
+      };
+
+      const displayAdditionalText = () => {
+        const additionalTextOptions = ['Coder', 'Problem Solver', 'Designer', 'Many More'];
+        let index = 0;
+        setInterval(() => {
+          additionalText.textContent = additionalTextOptions[index];
+          index = (index + 1) % additionalTextOptions.length;
+        }, 2000);
+      };
+
+      setTimeout(() => {
+        simulateType('Welcome to my portfolio', movingText);
+      }, 1000);
+    });
   </script>
 </body>
 </html>
