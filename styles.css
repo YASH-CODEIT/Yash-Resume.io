@@ -137,7 +137,7 @@
   }
   
   .navbar-nav .nav-item .nav-link:hover::before {
-    transform: translateX(50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
     background-color: dodgerblue;
     width:100%;
   }
