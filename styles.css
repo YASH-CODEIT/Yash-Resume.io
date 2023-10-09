@@ -157,11 +157,11 @@ background-color: #111e2a;
 .hobby-item {
   text-align: center;
   margin: 20px;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease-in-out;
 }
 
 .hobby-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .skill-icon {
   width: 50px; /* Adjust the size as needed */
