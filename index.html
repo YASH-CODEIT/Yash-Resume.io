@@ -193,7 +193,7 @@
         </div>
   
         <div class="col-md-6">
-          <div class="card">
+          <div class="card project-card">
             <img src="images/Capture.JPG" class="card-img-top" alt="Project 2 Image">
             <div class="card-body">
               <h5 class="card-title">Phone Validator</h5>
@@ -282,7 +282,7 @@
   <div class="modal-dialog" role="document">
       <div class="modal-content">
           <div class="modal-header">
-              <h5 class="modal-title" id="project3ModalLabel">Fees Management Syatem</h5>
+              <h5 class="modal-title" id="project3ModalLabel">Fees Management System</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
               </button>
@@ -377,6 +377,17 @@ aria-hidden="true">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const projectCards = document.querySelectorAll('.project-card');
+    
+      projectCards.forEach(function(card) {
+        card.addEventListener('click', function() {
+          this.classList.toggle('hovered');
+        });
+      });
+    });
+    
+  </script>
 </body>
 </html>
